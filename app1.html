@@ -11,6 +11,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <style>
             html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+
+			.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
             </style>
         
                             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,6 +72,22 @@
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="styles.css">
+
+
+
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/templatemo_misc.css">
+		<link rel="stylesheet" href="css/templatemo_style.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+		
+
+
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -63,53 +133,78 @@
                           <!-- The Grid -->
                           <div class="w3-row-padding">
                                 <div class = "box">
+								
+								
+								
 									
-									<p ><span class="image left"><img src="images/ember1.jpg" alt="" /></span>
-										
-										<div class="box" style = "font-family:Arial, Helvetica, sans-serif;font-size:20px;font-style:italic;">
-										1. Lists the assigned jobs, and available jobs<br>
-										2. UI neatly arranged in CardViews<br>
-										3. Profile Picture and User Details retrieved from Server
+
+
+
+
+
+									<div class="row">
+										<div class="column">
+										  <div class="card">
+											<img src="images/ember1.jpg" alt="Jane" style="width:100%">
+											<div class="container">
+											  <h2>Profile Page</h2>
+											
+											  <p>1. Lists the assigned jobs, and available jobs</p>
+											  <p>2. UI neatly arranged in CardViews</p>
+											  <p>3. Profile Picture and User Details retrieved from Server</p>
+											
+											</div>
+										  </div>
 										</div>
+									  
+										<div class="column">
+										  <div class="card">
+											<img src="images/ember2.png" alt="Mike" style="width:100%">
+											<div class="container">
+											  <h2>Performance Page</h2>
+											  
+											  <p>1. Displays graph of attendance data, courses completed 
+												and other employee metrics</p>
+											  <p>2. Calculates rating for each employee, adding a quality aspect 
+												to work.</p>
+											
+											</div>
+										  </div>
+										</div>
+									  
+										<div class="column">
+										  <div class="card">
+											<img src="images/ember3.png" alt="John" style="width:100%">
+											<div class="container">
+											  <h2>Career and Courses Page</h2>
+											  
+											  <p>1. Displays courses available for different career tracks, e.g Forklift, 
+												Safety Training, TCP, etc.</p>
+											  <p> 2. May also be used to conduct IQ and personality quizzes to
+												understand the workforce in another context</p>
+											  
+											</div>
+										  </div>
+										</div>
+									  </div>
 
-										
-								 	</p>
-										
-								  <!-- End Grid -->
-                             </div>
 
 
-							 <div class = "box" style="margin-top: 55%;">
-									
-								<p><span class="image right"><img src="images/ember2.png" alt="" /></span>
-									
-									<div class="box" style = "font-family:Arial, Helvetica, sans-serif;font-size:20px;font-style:italic;">
-										1. Displays graph of attendance data, courses completed 
-										and other employee metrics<br>
-									    2. Calculates rating for each employee, adding a quality aspect 
-										to work.
-									 
-									</div>
 
-									
-								 </p>
-									
-							  <!-- End Grid -->
-						 </div><div class = "box" style="margin-top: 55%;">
-									
-							<p><span class="image left"><img src="images/ember3.png" alt="" /></span>
-								
-								<div class="box" style = "font-family:Arial, Helvetica, sans-serif;font-size:20px;font-style:italic;">
-									1. Displays courses available for different career tracks, e.g Forklift, 
-									Safety Training, TCP, etc. <br>
-								 2. May also be used to conduct IQ and personality quizzes to
-									understand the workforce in another context
-								 
-								</div>
 
-								
-							 </p>
-								
+
+
+
+
+
+
+
+
+
+
+
+
+
 						  <!-- End Grid -->
 					 </div>
 
@@ -120,7 +215,7 @@
 							 
                               <!-- End Page Container -->
                         </div>
-                       
+                       </div>
                     </div>
                             
                 </body>
@@ -129,7 +224,6 @@
 				<!-- Copyright -->
 					
 
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -139,6 +233,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			  <!-- Start Script -->
+			  <script src="assets/js/jquery-1.11.0.min.js"></script>
+			  <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+			  <script src="assets/js/bootstrap.bundle.min.js"></script>
+			  <script src="assets/js/templatemo.js"></script>
+			  <script src="assets/js/custom.js"></script>
+			  <!-- End Script -->
 
 	</body>
 </html>
